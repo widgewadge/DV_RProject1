@@ -1,0 +1,24 @@
+---
+title: "Project1"
+output: html_document
+---
+By Khang Pham and Don Pham
+
+```{r }
+library('RCurl')
+library('ggplot2')
+```
+
+This is our R markdown document for our first project. 
+
+This is the data frame file that grabs all the data and put them in their respective dataframe. Data frame dfC is for Customers, dfo is for orders, dfi is for items, dfod is for order details, and dfe is for all of the schemes combined into one. 
+
+```{r}
+source("../01 Data/create_data_frame.R", echo = TRUE)
+```
+
+Here are our four intresting plots and the code we used to produced them. Thee bottom three plots are the plots we replicated 
+
+```{r}
+source("../02 Visualization/plots.R", echo = TRUE)
+```
